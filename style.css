@@ -3,15 +3,16 @@ html {
 }
 
 body {
-    font-family: 'Dosis', 'Open Sans', Arial;
+    font-family: 'Open Sans', Helvetica;
     margin: 0;
     padding: 0;
 }
 
 header {
+    font-family: 'Exo', Helvetica;
     margin-top: -1.6%;
     padding-top: 0.25%;
-    background-color: lightblue;
+    background-color: lightskyblue; /*TODO: replace with photo*/
     text-align: center;
     position: fixed;
     z-index: 10;
@@ -19,7 +20,12 @@ header {
     height: 17%;
 }
 
+header p {
+    font-size: 1.25em;
+}
+
 h1 {
+    text-transform: uppercase;
     margin-top: 5px;
     font-size: 2em;
 }
@@ -28,13 +34,27 @@ h2 {
     font-size: 1.75em;
 }
 
-p, a {
+p {
     font-size: 1.1em;
+}
+
+a {
+    font-family: 'Dosis', Helvetica;
+    font-size: 1.25em;
+    color: #cc00ff;
+    text-decoration: none;
 }
 
 main {
     position: relative;
     top: 115px;
+}
+
+.dot {
+    font-size: 1.75em;;
+    font-family: Helvetica;
+    vertical-align: sub;
+    color: #000000;
 }
 
 .section {
@@ -44,6 +64,8 @@ main {
 .section_title {
     padding: 2% 0;
     text-align: center;
+    font-family: 'Exo', Helvetica;
+    text-transform: uppercase;
 }
 
 .about_body {
@@ -56,6 +78,10 @@ main {
 
 .about_left, .about_right {
     width: 50%;
+}
+
+.about_left {
+    text-align: center;
 }
 
 footer {
