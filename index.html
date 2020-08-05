@@ -7,7 +7,7 @@
 
         <link rel='stylesheet' href='style.css' type='text/css'>
         <link href="https://fonts.googleapis.com/css2?family=Exo&family=Lato&family=Open+Sans&family=Dosis:wght@400;500&display=swap" rel="stylesheet">
-        <script src='script.js' type='text/javascript'></script>
+        <!-- <script src='script.js' type='text/javascript'></script> -->
     </head>
 
     <body>
@@ -216,11 +216,21 @@
     
                 <p>
                     The best way to reach me is via email at <span id='email'>yuenmarco17@gmail.com</span>
-                    <button id='copy_email_button' onclick='copyToClipboard()'>Copy Email</button> <!--TODO: create script section instead of using entire script file-->
+                    <button id='copy_email_button' onclick='copyToClipboard()'>Copy Email</button>
+                    <script>
+                        function copyToClipboard() {
+                            const textToCopy = document.getElementById('email').innerHTML;
+                            navigator.clipboard.writeText(textToCopy);
+                            
+                            alert('\nMy email has been copied to your clipboard.\nI look forward to speaking with you soon!\n\n- Marco');
+                        }
+                    </script>
                 </p>
-    
-                <a href=''>Github</a>
-                <a href=''>LinkedIn</a>
+                
+                <div class='links'>
+                    <a href='https://github.com/MarcoYuen17' class='link' id='github_link' target='blank'></a>
+                    <a href='https://www.linkedin.com/in/marco-yuen-b8656a155/' class='link' id='linkedin_link' target='blank'></a>
+                </div>
             </section>    
         </main>
     </body>

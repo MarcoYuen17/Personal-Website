@@ -97,6 +97,17 @@ main {
     text-indent: 2em;
 }
 
+.links {
+    margin-top: 5%;
+}
+
+.link {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 2% 2% 0 2%;
+    margin: 0 1%;
+}
+
 footer {
     position: relative;
     top: 200px;
@@ -131,4 +142,13 @@ footer {
 
 #copy_email_button {
     margin-left: 1%;
+}
+
+#github_link {
+    background-image: url('assets/github_icon.png');
+}
+
+#linkedin_link {
+    background-image: url('assets/social-linkedin-circle-512.webp');
+    background-size: contain;
 }
