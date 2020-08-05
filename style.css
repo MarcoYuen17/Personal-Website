@@ -62,7 +62,7 @@ main {
 }
 
 .section_title {
-    padding: 2% 0;
+    padding-top: 2%;
     text-align: center;
     font-family: 'Exo', Helvetica;
     text-transform: uppercase;
@@ -84,6 +84,19 @@ main {
     text-align: center;
 }
 
+.extracurricular_activity, .project_name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.extracurricular_description, .project_description {
+    margin-bottom: 3em;
+}
+
+.indent {
+    text-indent: 2em;
+}
+
 footer {
     position: relative;
     top: 200px;
@@ -97,10 +110,6 @@ footer {
 #extracurriculars {
     position: relative;
     height: 83.5vh;
-}
-
-#projects {
-    margin-bottom: 0;
 }
 
 #extracurriculars {
