@@ -18,7 +18,7 @@
             <p>
                 2024 <strong>Computer Science BSc</strong> candidate at the <em>University of British Columbia</em>. Passionate about enriching the lives of other people in any possible way.
             </p>
-            
+            <hr>
             <a href='#about_anchor'>About</a>
             <span class='dot'>&#x2022</span>
             <a href='#projects_anchor'>Projects</a>
@@ -45,7 +45,7 @@
                             Currently, I have experience with Java, HTML, CSS, and JavaScript, but I am eager to learn and create a project with Python in the near future.
                         </p>
                         <p>
-                            Lifelong learning is a commitment of mine, a commitment that I believe is crucial to worldwide camaraderie as well as the advancement of our civilization. <!--TODO: split p?-->
+                            Lifelong learning is a commitment of mine, a commitment that I believe is crucial to worldwide camaraderie as well as the advancement of our civilization.
                         </p>
                         <p>
                             When not working, my hobbies include hiking, running, swimming, baking, cooking, and snowboarding. 
@@ -213,18 +213,18 @@
                     Contact
                 </h2>
     
-                <p>
+                <span>
                     The best way to reach me is via email at <span id='email'>yuenmarco17@gmail.com</span>
-                    <button id='copy_email_button' onclick='copyToClipboard()'>Copy Email</button>
-                    <script>
-                        function copyToClipboard() {
-                            const textToCopy = document.getElementById('email').innerHTML;
-                            navigator.clipboard.writeText(textToCopy);
-                            
-                            alert('\nMy email has been copied to your clipboard.\nI look forward to speaking with you soon!\n\n- Marco');
-                        }
-                    </script>
-                </p>
+                </span>
+                <span id='copy_email_button' onclick='copyToClipboard()'>Copy Email</span>
+                <script>
+                    function copyToClipboard() {
+                        const textToCopy = document.getElementById('email').innerHTML;
+                        navigator.clipboard.writeText(textToCopy);
+                        
+                        alert('\nMy email has been copied to your clipboard.\nI look forward to speaking with you soon!\n\n- Marco');
+                    }
+                </script>
                 
                 <div class='links'>
                     <a href='https://github.com/MarcoYuen17' class='link' id='github_link' target='blank'></a>
