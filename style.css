@@ -10,7 +10,6 @@ body {
 
 header {
     font-family: 'Exo', Helvetica;
-    margin-top: -1.6%;
     padding-top: 0.25%;
     background-image: radial-gradient(circle, navy 20%, deepskyblue);
     color: white;
@@ -18,18 +17,19 @@ header {
     position: fixed;
     z-index: 10;
     width: 100%;
-    height: 17%;
+    height: 15.5vh;
+    top: 0;
 }
 
 header p {
-    font-size: 1.25em;
-    margin: 1% 0 0.5% 0;
+    font-size: 1.4vw;
+    margin: 0.25% 0 0.5% 0;
 }
 
 h1 {
     text-transform: uppercase;
-    margin: 5px 0 0 0;
-    font-size: 2em;
+    margin: 0.75% 0 0 0;
+    font-size: 3.5vh;
 }
 
 h2 {
@@ -44,24 +44,23 @@ p {
     font-size: 1.1em;
 }
 
-a {
+header a {
     font-family: 'Dosis', Helvetica;
-    font-size: 1.25em;
-    /* color: yellowgreen; */
+    font-size: 2.25vh;
     color: rgb(128, 255, 0);
     text-decoration: none;
 }
 
 main {
     position: relative;
-    top: 115px;
+    top: 12vh;
 }
 
+
 .dot {
-    font-size: 1.75em;;
+    font-size: 2.5vh;
     font-family: Helvetica;
     vertical-align: sub;
-    /* color: #000000; */
 }
 
 .section {
@@ -89,6 +88,43 @@ main {
 
 .about_left {
     text-align: center;
+}
+
+.projects_container {
+    display: flex;
+    text-align: center;
+}
+
+.projects_container a {
+    color: white;
+    text-decoration: none;
+}
+
+.project {
+    width: 40%;
+    margin: 0 1%;
+    background-color: rgb(50, 50, 50);
+    padding-bottom: 3.5vh;
+    border-radius: 25px;
+    transition: background-color, 0.5s;
+}
+
+.project:hover {
+    cursor: pointer;
+    background-color: rgb(110, 140, 60);
+}
+
+.project_photo {
+    height: 75%;
+    width: 90%;
+}
+
+#projects ul {
+    margin-top: 7.5%;
+}
+
+#projects ul li {
+    margin-top: 2.5%;
 }
 
 .extracurricular_activity, .project_name {
@@ -122,12 +158,12 @@ footer {
 
 #about, #projects, #contact {
     position: relative;
-    height: 81vh;
+    height: 82.5vh;
 }
 
 #extracurriculars {
     position: relative;
-    height: 83.5vh;
+    height: 85vh;
     color: white;
     text-shadow: black 0.5px 0.5px 1px,
                  black -0.5px 0.5px 1px,
@@ -144,7 +180,7 @@ footer {
 #about_anchor, #projects_anchor, #extracurriculars_anchor, #contact_anchor {
     display: block;
     position: relative;
-    top: -20%;
+    top: -18%;
     visibility: hidden;
 }
 
